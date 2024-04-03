@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChipotleRep</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="personal_preferences" translatable="false"><![CDATA[Personal & Preferences]]></string>
+    <string name="rate_app" translatable="false"><u>Rate App</u></string>
+    <string name="qa" translatable="false"><u>Frequently Asked Questions</u></string>
+    <string name="policy" translatable="false"><u>Privacy Policy, including California</u></string>
+    <string name="rights" translatable="false"><u>Privacy Rights</u></string>
+    <string name="choice" translatable="false"><u>Your Privacy Choices</u></string>
+    <string name="catering" translatable="false"><u>Try Catering</u></string>
+    <string name="full" translatable="false"><u>See full terms</u></string>
+</resources>

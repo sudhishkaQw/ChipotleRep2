@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu"
+
+        android:title="MENU" />
+
+    <item
+        android:id="@+id/action_home"
+
+        android:title="FEATURED" />
+
+    <item
+        android:id="@+id/order"
+
+        android:title="ORDERS" />
+
+    <item
+        android:id="@+id/rewards"
+        android:title="REWARDS" />
+
+</menu>

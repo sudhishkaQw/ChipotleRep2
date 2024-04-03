@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagesvegf"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_person_outline_24" />
+
+    <ImageView
+        android:id="@+id/cartIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:transitionName="cart_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/bag" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/pickupDeliveryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Pickup or Delivery"
+        android:layout_marginTop="25dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_corner"
+        android:textSize="18sp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="30dp"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/headingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="JOIN REWARDS. \nGET REWARDED."
+                android:textColor="@color/darkBrown"
+                android:textSize="30sp" />
+
+            <!-- Description Text -->
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headingText"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:foregroundGravity="center"
+                android:gravity="center_horizontal"
+                android:text="Choose the real reward you \n want for eating real food "
+                android:textColor="@color/lightBrown"
+                android:textSize="18sp" />
+
+            <!-- Create Account Button -->
+            <Button
+                android:id="@+id/createAccountButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionText"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="70dp"
+                android:text="C r e a t e   A c c o u n t"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_corner" />
+
+            <!-- Sign In Button -->
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/createAccountButton"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="50dp"
+                android:text="SIGN IN"
+                android:fontFamily="@font/work_sans_semibold"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/darkBrown"
+                android:background="@drawable/corner" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userMainProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/chipma"
+        android:elevation="8dp" />
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="120dp"
+        android:layout_gravity="bottom">
+    <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signInButton"
+        android:background="@drawable/corner"
+        android:backgroundTint="@color/darkBrown"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:text="HOW REWARDS WORKS"
+        android:textColor="@color/white" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomCard"
+        app:cardCornerRadius="8dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_gravity="bottom"
+        app:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENU"
+                android:textSize="16sp"
+                android:id="@+id/menu"
+                android:fontFamily="@font/work_sans_semibold"
+                android:textColor="@color/darkBrown"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/menu"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:id="@+id/featured"
+                android:fontFamily="@font/work_sans_semibold"
+                android:textColor="@color/darkBrown"
+                android:text="FEATURED" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/featured"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:id="@+id/order"
+                android:fontFamily="@font/work_sans_semibold"
+                android:textColor="@color/darkBrown"
+                android:text="ORDER" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/order"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/rewards"
+                android:fontFamily="@font/work_sans_semibold"
+                android:textColor="@color/darkBrown"
+                android:text="REWARDS" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>
+
